@@ -11,7 +11,7 @@ function OppsCates2({ image, link }) {
     }, [])
     
     let getList_Opps_intern = async ()=>  {
-        let response = await fetch('https://dj-front.onrender.com/oppsin/')
+        let response = await fetch('/oppsin/')
         let data = await response.json()
         setList_Opps_intern(data)
     } 
