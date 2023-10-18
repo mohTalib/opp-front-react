@@ -1,6 +1,6 @@
 {
   "name": "spotify-clone",
-  "proxy": "https://dj-front.onrender.com/",
+  "proxy": "https://dj-front.onrender.com",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
