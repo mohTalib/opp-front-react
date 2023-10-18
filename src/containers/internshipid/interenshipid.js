@@ -10,7 +10,7 @@ const Internshipid = () => {
     const [opp, setOpp] = useState(null);
 
     const getList_Opps_intern = async () => {
-        let response = await fetch(`/oppsin/${oppsprId}`)
+        let response = await fetch(`https://dj-front.onrender.com/oppsin/${oppsprId}`)
         let data = await response.json()
         setOpp(data)
     }
