@@ -33,7 +33,7 @@ function OppsCates2({ image, link }) {
           <a href={`/Internships/${opp.id}`} rel="noopener noreferrer" className="theanger">
             <div className="card__container">
               <div className="card__image--div mb-3">
-                <img src={`/media/${opp.img3}`} alt="" className="" />
+                <img src={`/media${opp.img3}`} alt="" className="" />
                 <p className="play--icon">Check</p>
               </div>
               <div className="card__content">
