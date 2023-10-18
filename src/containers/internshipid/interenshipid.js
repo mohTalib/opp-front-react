@@ -60,7 +60,7 @@ const Internshipid = () => {
     return (
         <><div data-aos="fade" data-aos-easing="ease-in" data-aos-duration="1000">
         </div><div className="d-flex flex-column justify-content-center">
-                    <img src={opp?.img3} alt="" className="img-det d-flex flex-wrap" />
+                    <img src={`https://dj-front.onrender.com/media${opp.img3}`} alt="" className="img-det d-flex flex-wrap" />
                 <div className="ph-des">
                         <h1>{opp?.title3}</h1>
                     <p className="para-main">{opp?.short_des3}</p>
