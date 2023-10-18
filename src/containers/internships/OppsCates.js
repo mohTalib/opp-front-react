@@ -13,7 +13,7 @@ function OppsCates2({ image, link }) {
   let getList_Opps_intern = async () => {
     try {
       // Use Axios to make the GET request to your external JSON API
-      const response = await axios.get('https://your-external-api-url/oppsin/');
+      const response = await axios.get('https://dj-front.onrender.com/oppsin/');
 
       // Axios automatically parses the JSON response, so you don't need response.json()
       setList_Opps_intern(response.data);
