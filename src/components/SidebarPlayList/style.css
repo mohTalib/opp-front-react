@@ -1,0 +1,93 @@
+.sidebar__playlist__container {
+    padding-left: 20px;
+    margin-top: 10px;
+    
+}
+
+.playlist__row {
+    position: relative; 
+    margin-bottom: 13px;
+}
+
+.playlist__row__icon {
+    margin-right: 16px;
+    background-color: #ccc;
+    padding: 5px;
+    font-size: 35px !important;
+    color: #000;
+    border-radius: 50%;
+}
+
+.playlist__title {
+    font-family: "Spotify Bold";
+    text-transform: uppercase;
+    font-size: 13px;
+    color: #999;
+    letter-spacing: 1px;
+    padding-bottom: 20px;
+}
+
+.playlist__row__label {
+    font-size: 15px;
+    font-family: "Spotify Bold";
+    color: #999;
+}
+
+.playlist__row__icon--favorite {
+    margin-right: 16px;
+    background: linear-gradient(135deg, #e1f50a, #c4d1ef);
+    font-size: 35px !important;
+    padding: 5px;
+    border-radius: 50%;
+    color: #000000;
+}
+
+.playlist__row_insta{
+    margin-top: 14em;
+    font-size: 35px !important;
+    margin-left: 35px;
+}
+.playlist__row_insta .MuiSvgIcon-root {
+    margin-right: 25px; 
+  }
+
+.link-without-style {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .icon-with-hover-effect {
+    transition: transform 0.1s; 
+  }
+  
+  .icon-with-hover-effect:hover {
+    transform: scale(1.2); 
+  }
+
+  .playlist__row {
+    position: relative; 
+ 
+  
+    &::after {
+      content: attr(data-tooltip); 
+      position: absolute;
+      bottom: -25px; 
+      left: 60%; 
+      transform: translateX(-50%);
+      background-color: #333;
+      color: #fff;
+      padding: 10px 15px;
+      border-radius: 20px;
+      font-size: 14px;
+      white-space: nowrap;
+      opacity: 0; 
+      visibility: hidden; 
+      transition: opacity 0.2s ease, visibility 0.2s ease;
+    }
+  
+    &:hover::after {
+      opacity: 1; 
+      visibility: visible; 
+    }
+  }
+  

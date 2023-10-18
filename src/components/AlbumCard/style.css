@@ -1,0 +1,67 @@
+.card__container {
+    background-color: #202020;
+    width: 185px;
+    max-width: 190px;
+    height: 270px;
+    max-height: 300px;
+    padding: 16px;
+    color: #fff;
+    border-radius: 3%;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.card__container:hover {
+    background-color: #232323;
+    cursor: pointer;
+    transition: 0.3s ease-in;
+}
+
+.card__image--div {
+    position: relative;
+}
+
+.card__image--div>img {
+    border-radius: 3%;
+    width: 150px;
+    text-align: center;
+}
+
+.card__content__title {
+    font-family: "Spotify Bold";
+    font-size: 14px;
+}
+
+.card__content__text {
+    font-size: 13px;
+    color: #ccc;
+}
+
+.play--icon {
+    position: absolute;
+    bottom: 10px;
+    right: 15px;
+    font-size: 15px !important;
+    color:#ffffff;
+    visibility: hidden;
+    background-color: #fdd361;
+    border-radius: 20px;
+    padding-left: 7px;
+    padding-right: 8px;
+    font-family: "Spotify Bold";
+}
+
+.card__container:hover .play--icon {
+    visibility: visible;
+}
+.theanger{
+    text-decoration: none !important;
+    color: white !important;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .card__container {
+        background-color: #202020;
+    }
+}
