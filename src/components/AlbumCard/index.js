@@ -23,7 +23,7 @@ function AlbumCard({ label, description, image, link }) {
     <div className="card__container">
       <><a href={link} target="_blank" rel="noopener noreferrer" className="theanger">
       <div className="card__image--div mb-3">
-        <img src={images[image]} alt="" className="" />
+        <img src={images[image]} alt="img" className="img" />
         <p className="play--icon">Check</p>
       </div>
       <div className="card__content">
