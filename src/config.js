@@ -1,5 +1,5 @@
 export const images = {
-  row_1_1: require("./assets/images/Internships/1.jpg").default,
+  row_1_1: require("https://dj-front.onrender.com/media/imagesopps/6.jpg").default,
   row_1_2: require("./assets/images/Internships/2.jpg").default,
   row_1_3: require("./assets/images/Internships/3.jpg").default,
   row_1_4: require("./assets/images/Internships/4.jpg").default,
