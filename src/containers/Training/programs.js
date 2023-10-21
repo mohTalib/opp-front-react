@@ -37,7 +37,7 @@ function OppsCates7({ image, link }) {
               <div className="card__content">
                 <a href={link} target="_blank" rel="noopener noreferrer" className="theanger">
                   <p className="card__content__title">{opp.title7}</p>
-                  <p className="card__content__text">{opp.description7}</p>
+                  <p className="card__content__text">{opp.short_des7}</p>
                 </a>
               </div>
             </div>
