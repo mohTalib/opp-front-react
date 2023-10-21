@@ -37,8 +37,8 @@ let getList_Opps_others = async () => {
                         <div className="card__content">
 
                             <><a href={link} target="_blank" rel="noopener noreferrer" className="theanger">
-                                <p className="card__content__title">{opp.title5}</p>
-                                <p className="card__content__text">{opp.short_des5}</p>
+                                <p className="card__content__title">{opp.title6}</p>
+                                <p className="card__content__text">{opp.short_des6}</p>
                             </a></>
 
 
