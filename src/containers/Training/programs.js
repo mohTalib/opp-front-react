@@ -11,7 +11,7 @@ function OppsCates7({ image, link }) {
     }, [])
     
     let getList_Opps_training = async ()=>  {
-        let response = await fetch('/oppstr/')
+        let response = await fetch('https://dj-front.onrender.com/oppstr/')
         let data = await response.json()
         setList_Opps_training(data)
     } 
@@ -26,7 +26,7 @@ function OppsCates7({ image, link }) {
                     <><a href={`/Training/${opp.id}`} target="_blank" rel="noopener noreferrer" className="theanger">
                     <div className="card__container">
                         <div className="card__image--div mb-3">
-                            <img src={opp.img7} alt="" className="" />
+                            <img src={`https://dj-front.onrender.com/media${opp?.img7}`} alt="" className="" />
                             <p className="play--icon">Check</p>
                         </div>
                         <div className="card__content">
