@@ -19,7 +19,7 @@ const getList_Opps_others = async () => {
     } catch (error) {
         console.error('Error fetching data:', error);
     }
-}
+ };
     return (
         
       <><div data-aos="fade" data-aos-easing="ease-in" data-aos-duration="1000">
@@ -47,7 +47,7 @@ const getList_Opps_others = async () => {
                     </a>
                     </>
                     
-                ))};
+                ))}
             </div></>
     );
     }
