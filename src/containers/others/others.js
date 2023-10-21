@@ -1,5 +1,6 @@
 
-import React, {useState, useEffect} from 'react'; 
+import React, { useState, useEffect } from 'react';
+import axios from 'axios'; // Import axios
 import "./style.css";
 
 
@@ -11,11 +12,14 @@ function OppsCates5({ image, link }) {
         getList_Opps_others()
     }, [])
     
-    let getList_Opps_others = async ()=>  {
-        let response = await fetch('/oppsot/')
-        let data = await response.json()
-        setList_Opps_others(data)
-    } 
+let getList_Opps_others = async () => {
+    try {
+        const response = await axios.get('https://dj-front.onrender.com/oppsot/');
+        setList_Opps_others(response.data);
+    } catch (error) {
+        console.error('Error fetching data:', error);
+    }
+}
     return (
         
       <><div data-aos="fade" data-aos-easing="ease-in" data-aos-duration="1000">
@@ -27,14 +31,14 @@ function OppsCates5({ image, link }) {
                     <><a href={`/Others/${opp.id}`} target="_blank" rel="noopener noreferrer" className="theanger">
                     <div className="card__container">
                         <div className="card__image--div mb-3">
-                            <img src={opp.img6} alt="" className="" />
+                            <img src={`https://dj-front.onrender.com/media${opp?.img6}`}} alt="" className="" />
                             <p className="play--icon">Check</p>
                         </div>
                         <div className="card__content">
 
                             <><a href={link} target="_blank" rel="noopener noreferrer" className="theanger">
                                 <p className="card__content__title">{opp.title5}</p>
-                                <p className="card__content__text">{opp.description5}</p>
+                                <p className="card__content__text">{opp.short_des5}</p>
                             </a></>
 
 
