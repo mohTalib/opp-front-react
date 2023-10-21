@@ -1,15 +1,20 @@
 import React, { useState, useEffect } from 'react';
-import { useParams } from 'react-router-dom'; 
+import { useParams } from 'react-router-dom';
+import aiox from 'aiox'; // Import aiox
 import "./style.css";
 
 const Othersid = () => {
-    const { id: oppsotId } = useParams(); 
+    const { id: oppsotId } = useParams();
     const [opp, setOpp] = useState(null);
 
     const getList_Opps_programs = async () => {
-        let response = await fetch(`/oppsot/${oppsotId}`)
-        let data = await response.json()
-        setOpp(data)
+        try {
+            const response = await aiox.get(`https://dj-front.onrender.com/oppsot/${oppsotId}`);
+            const data = response.data;
+            setOpp(data);
+        } catch (error) {
+            console.error('Error fetching data:', error);
+        }
     }
 
     useEffect(() => {
@@ -54,7 +59,7 @@ const Othersid = () => {
     return (
         <><div data-aos="fade" data-aos-easing="ease-in" data-aos-duration="1000">
         </div><div className="d-flex flex-column justify-content-center">
-                    <img src={opp?.img6} alt="" className="img-det d-flex flex-wrap" />
+                    <img src={`https://dj-front.onrender.com/media${opp?.img6}`} alt="" className="img-det d-flex flex-wrap" />
                 <div className="ph-des">
                         <h1>{opp?.title6}</h1>
                     <p className="para-main">{opp?.short_des6}</p>
