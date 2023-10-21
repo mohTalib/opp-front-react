@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom'; 
 import "./style.css";
+import axios from 'axios';
+
 
 
 
@@ -8,11 +10,15 @@ const Programsid = () => {
     const { id: oppsprId } = useParams(); 
     const [opp, setOpp] = useState(null);
 
-    const getList_Opps_programs = async () => {
-        let response = await fetch(`/oppspr/${oppsprId}`)
-        let data = await response.json()
-        setOpp(data)
-    }
+   const getList_Opps_programs = async () => {
+  try {
+    const response = await axios.get(`https://dj-front.onrender.com/oppspr/${oppsprId}`);
+    setOpp(response.data);
+  } catch (error) {
+    console.error("Error fetching data:", error);
+    // Handle errors here (e.g., show an error message to the user)
+  }
+};
 
     useEffect(() => {
         getList_Opps_programs();
@@ -57,7 +63,7 @@ const Programsid = () => {
     return (
         <><div data-aos="fade" data-aos-easing="ease-in" data-aos-duration="1000">
         </div><div className="d-flex flex-column justify-content-center">
-                    <img src={opp?.img4} alt="" className="img-det d-flex flex-wrap" />
+                    <img src={`https://dj-front.onrender.com/media${opp?.img4}`} alt="" className="img-det d-flex flex-wrap" />
                 <div className="ph-des">
                         <h1>{opp?.title1}</h1>
                     <p className="para-main">{opp?.short_des4}</p>
