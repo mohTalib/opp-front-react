@@ -9,7 +9,7 @@ const Othersid = () => {
 
     const getList_Opps_programs = async () => {
         try {
-            const response = await aiox.get(`https://dj-front.onrender.com/oppsot/${oppsotId}`);
+            const response = await axios.get(`https://dj-front.onrender.com/oppsot/${oppsotId}`);
             const data = response.data;
             setOpp(data);
         } catch (error) {
