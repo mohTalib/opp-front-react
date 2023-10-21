@@ -32,7 +32,7 @@ function OppsCates1({ opp }) {
             <a href={`/CultureExchanges/${opp.id}`} rel="noopener noreferrer" className="theanger">
               <div className="card__container1 card__container">
                 <div className="card__image--div mb-3">
-                  <img src={`/media/${opp?.img1}`} alt="" className="img_w" />
+                  <img src={`/media${opp?.img1}`} alt="" className="img_w" />
                   <p className="play--icon">Check</p>
                 </div>
                 <div className="card__content">
