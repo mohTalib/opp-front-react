@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
-import aiox from 'aiox'; // Import aiox
+import axios from 'axios'; // Import axios
 import "./style.css";
 
 const Othersid = () => {
