@@ -15,7 +15,7 @@ const Othersid = () => {
         } catch (error) {
             console.error('Error fetching data:', error);
         }
-    }
+    };
 
     useEffect(() => {
         getList_Opps_programs();
