@@ -12,7 +12,7 @@ function OppsCates5({ image, link }) {
         getList_Opps_others()
     }, [])
     
-let getList_Opps_others = async () => {
+const getList_Opps_others = async () => {
     try {
         const response = await axios.get('https://dj-front.onrender.com/oppsot/');
         setList_Opps_others(response.data);
