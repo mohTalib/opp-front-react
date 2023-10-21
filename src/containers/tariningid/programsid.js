@@ -1,17 +1,19 @@
 import React, { useState, useEffect } from 'react';
-import { useParams } from 'react-router-dom'; 
+import { useParams } from 'react-router-dom';
+import axios from 'axios'; // Import axios
 import "./style.css";
 
-
-
 const Trainingid = () => {
-    const { id: oppstrId } = useParams(); 
+    const { id: oppstrId } = useParams();
     const [opp, setOpp] = useState(null);
 
     const getTraining = async () => {
-        let response = await fetch(`/oppstr/${oppstrId}`)
-        let data = await response.json()
-        setOpp(data)
+        try {
+            const response = await axios.get(`https://dj-front.onrender.com/oppstr/${oppstrId}`);
+            setOpp(response.data);
+        } catch (error) {
+            console.error("Error fetching data: ", error);
+        }
     }
 
     useEffect(() => {
@@ -58,7 +60,7 @@ const Trainingid = () => {
     return (
         <><div data-aos="fade" data-aos-easing="ease-in" data-aos-duration="1000">
         </div><div className="d-flex flex-column justify-content-center">
-                    <img src={opp?.img7} alt="" className="img-det d-flex flex-wrap" />
+                    <img src={`https://dj-front.onrender.com/media${opp?.img7}`} alt="" className="img-det d-flex flex-wrap" />
                 <div className="ph-des">
                         <h1>{opp?.title7}</h1>
                     <p className="para-main">{opp?.short_des7}</p>
