@@ -31,7 +31,7 @@ const getList_Opps_others = async () => {
                     <><a href={`/Others/${opp.id}`} target="_blank" rel="noopener noreferrer" className="theanger">
                     <div className="card__container">
                         <div className="card__image--div mb-3">
-                            <img src={`https://dj-front.onrender.com/media${opp?.img6}`}} alt="" className="" />
+                            <img src={`https://dj-front.onrender.com/media${opp?.img6}`} alt="" className="" />
                             <p className="play--icon">Check</p>
                         </div>
                         <div className="card__content">
