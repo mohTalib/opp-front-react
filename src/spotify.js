@@ -25,25 +25,25 @@ const data = [
         image: "row_1_4",
         label: "Development Fellowship",
         description: "Since 2007, the Leadership...",
-        link: "/CultureExchanges/4"
+        link: "/CultureExchanges/7"
       },
       {
         image: "row_1_10",
         label: "Kectil Cultural Exchange Program",
         description: "It is a year-long Asian cultural exch...",
-        link: "/CultureExchanges/5"
+        link: "/CultureExchanges/4"
       },
       {
         image: "row_1_11",
         label: "Youth Policy Summit",
         description: "The Youth Policy Summit 2024 in Malaysia...",
-        link: "/CultureExchanges/6"
+        link: "/CultureExchanges/5"
       },
       {
         image: "row_1_12",
         label: "Hansen Leadership Institute",
         description: "Hansen Leadership Institute 2024 in the...",
-        link: "/CultureExchanges/7"
+        link: "/CultureExchanges/6"
       },
       {
         image: "row_1_5",
