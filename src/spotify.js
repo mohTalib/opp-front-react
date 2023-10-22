@@ -116,37 +116,37 @@ const data = [
         image: "row_4_2",
         label: "UNICEF Internship",
         description: "Do you want to make a difference...",
-        link: "/internships/3"
+        link: "/internships/6"
       },
       {
         image: "row_4_3",
         label: "OIST Internship",
         description: "OIST Internship in Japan 2024 is...",
-        link: "/internships/4"
+        link: "/internships/7"
       },
       {
         image: "row_4_4",
         label: "Rwanga Vacancies",
         description: "Rwanga Foras is a project by Rwanga...",
-        link: "/internships/5"
+        link: "/internships/8"
       },
       {
         image: "row_4_5",
         label: "Chevening Fellowships 2024",
         description: "Chevening Fellowships 2024 is one of the...",
-        link: "/internships/6"
+        link: "/internships/9"
       },
       {
         image: "row_4_6",
         label: "OHCHR Indigenous Fellowship ",
         description: "OHCHR Indigenous Fellowship Pr...",
-        link: "/internships/7"
+        link: "/internships/10"
       },
       {
         image: "row_4_7",
         label: "OIST Internship in Japan 2024",
         description: "OIST Internship in Japan 2024 is a uniq...",
-        link: "/internships/8"
+        link: "/internships/11"
       },
       {
         image: "row_1_5",
