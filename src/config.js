@@ -7,7 +7,7 @@ export const images = {
   row_1_10: "https://dj-front.onrender.com/media/imagesopps/Kectile.jpg",
   row_1_11: "https://dj-front.onrender.com/media/imagesopps/photo_2023-10-06_17-27-44.jpg",
   row_1_12: "https://dj-front.onrender.com/media/imagesopps/9.jpg",
-  row_2_1: require("./assets/images/hiphop/1.jpg").default,
+  row_2_1: "https://dj-front.onrender.com/media/imagesopps/red_2.jpg",
   row_2_2: require("./assets/images/hiphop/2.jpg").default,
   row_2_3: require("./assets/images/hiphop/3.jpg").default,
   row_2_4: require("./assets/images/hiphop/4.jpg").default,
