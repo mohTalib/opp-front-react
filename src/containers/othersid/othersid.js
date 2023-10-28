@@ -30,11 +30,11 @@ const Othersid = () => {
     var endDate = new Date(opp.time6).getTime();
     var timeRemaining = endDate - currentTime;
 
-    if (timeRemaining <= 0) {
+    if (endDate <= 0) {
       document.getElementById("countdown").innerHTML = "Not Available";
       return;
     }
-     if (timeRemaining == 1) {
+     if (endDate == 1) {
         document.getElementById("countdown").innerHTML = "Always Open";
         return; 
     }
