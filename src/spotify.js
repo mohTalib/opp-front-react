@@ -226,6 +226,12 @@ const data = [
         description: "Make your time worthwhile by enrolli...",
         link: "/others/4"
       },
+            {
+        image: "row_6_7",
+        label: "UNICEF Online Courses",
+        description: "UNICEF Online Courses with Free...",
+        link: "/others/5"
+      },
       {
         image: "row_1_5",
         label: "",
