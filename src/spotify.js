@@ -191,6 +191,12 @@ const data = [
         link: "/Training/5"
       },
       {
+        image: "row_5_6",
+        label: "Internship in Switzerland",
+        description: "At CERN, the European Organization...",
+        link: "/Training/6"
+      },
+      {
         image: "row_1_5",
         label: "",
         description: "",
