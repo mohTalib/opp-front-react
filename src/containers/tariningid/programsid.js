@@ -36,6 +36,10 @@ const Trainingid = () => {
             document.getElementById("countdown").innerHTML = "Not Available";
             return; 
         }
+        if (timeRemaining = 1) {
+            document.getElementById("countdown").innerHTML = "Always Open";
+            return; 
+        }
 
 
         var days = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
