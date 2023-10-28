@@ -34,6 +34,10 @@ const Othersid = () => {
       document.getElementById("countdown").innerHTML = "Not Available";
       return;
     }
+     if (timeRemaining = 1) {
+        document.getElementById("countdown").innerHTML = "Always Open";
+        return; 
+    }
 
     var days = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
     var hours = Math.floor((timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
