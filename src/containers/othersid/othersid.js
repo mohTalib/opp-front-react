@@ -30,14 +30,16 @@ const Othersid = () => {
     var endDate = new Date(opp.time6).getTime();
     var timeRemaining = endDate - currentTime;
 
-    if (endDate <= 0) {
-      document.getElementById("countdown").innerHTML = "Not Available";
-      return;
-    }
-     if (endDate == 1) {
+    if (opp?.time6 == 1) {
         document.getElementById("countdown").innerHTML = "Always Open";
         return; 
     }
+        
+    if (timeRemaining <= 0) {
+      document.getElementById("countdown").innerHTML = "Not Available";
+      return;
+    }
+
 
     var days = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
     var hours = Math.floor((timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
