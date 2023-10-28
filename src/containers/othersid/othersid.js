@@ -34,7 +34,7 @@ const Othersid = () => {
       document.getElementById("countdown").innerHTML = "Not Available";
       return;
     }
-     if (timeRemaining = 1) {
+     if (timeRemaining == 1) {
         document.getElementById("countdown").innerHTML = "Always Open";
         return; 
     }
