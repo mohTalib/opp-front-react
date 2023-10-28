@@ -37,7 +37,7 @@ export const images = {
   row_5_3: "https://dj-front.onrender.com/media/imagesopps/italy.jpg",
   row_5_4: "https://dj-front.onrender.com/media/imagesopps/CERN.jpg",
   row_5_5: "https://dj-front.onrender.com/media/imagesopps/Stanford.jpg",
-  row_5_6: require("./assets/images/Mood/6.jpg").default,
+  row_5_6: "https://dj-front.onrender.com/media/imagesopps/CERN_aVblMBy.jpg",
   row_5_7: require("./assets/images/Mood/7.jpg").default,
   row_5_8: require("./assets/images/Mood/8.jpg").default,
   row_6_2: require("./assets/images/soundtrack/2.jpg").default,
