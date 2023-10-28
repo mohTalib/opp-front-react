@@ -45,7 +45,7 @@ export const images = {
   row_6_4: "https://dj-front.onrender.com/media/imagesopps/4_Uacv3bg.jpg",
   row_6_5: "https://dj-front.onrender.com/media/imagesopps/Asian_Development_Bank.jpg",
   row_6_6: "https://dj-front.onrender.com/media/imagesopps/Open_University.jpg",
-  row_6_7: require("./assets/images/soundtrack/7.jpg").default,
+  row_6_7: "https://dj-front.onrender.com/media/imagesopps/un-co.jpg",
   row_6_8: require("./assets/images/soundtrack/8.jpg").default,
   row_7_1: require("./assets/images/Focus/1.jpg").default,
   row_7_2: require("./assets/images/Focus/2.jpg").default,
