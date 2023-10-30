@@ -36,10 +36,15 @@ const Programsid = () => {
         var endDate = new Date(opp.time4).getTime();
         var timeRemaining = endDate - currentTime;
 
-        if (timeRemaining <= 0) {
-            document.getElementById("countdown").innerHTML = "Not Available";
-            return; 
-        }
+    if (opp?.time6 == 1) {
+        document.getElementById("countdown").innerHTML = "Always Open";
+        return; 
+    }
+        
+    if (timeRemaining <= 0) {
+      document.getElementById("countdown").innerHTML = "Not Available";
+      return;
+    }
 
 
         var days = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
