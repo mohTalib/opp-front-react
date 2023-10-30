@@ -7,6 +7,9 @@
         font-size: 20px;
         padding-left: 1em;
     }
+    .countdown {
+    padding-top: 2px;
+  }
 }
 .img-det{
     max-width: 400px;
