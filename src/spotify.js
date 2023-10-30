@@ -5,45 +5,45 @@ const data = [
     cards: [
       {
         image: "row_1_1",
-        label: "Travel to Japan",
-        description: "Get to know about Japanese Culture...",
-        link: "/CultureExchanges/1"
+        label: "IYLEP",
+        description: "Iraqi Young Leaders Exchange...",
+        link: "/CultureExchanges/8"
       },
       {
         image: "row_1_2",
+        label: "SUSI",
+        description: "The Study of the United States...",
+        link: "/CultureExchanges/10"
+      },
+      {
+        image: "row_1_3",
+        label: "SLP",
+        description: "The Student Leaders Program...",
+        link: "/CultureExchanges/9"
+      },
+      {
+        image: "row_1_4",
+        label: "CEE",
+        description: "The Community Engagement Exc...",
+        link: "/CultureExchanges/11"
+      },
+      {
+        image: "row_1_10",
         label: "Istanbul cultural Trip",
         description: "You are warmly invited to partake at Korean...",
         link: "/CultureExchanges/2"
       },
       {
-        image: "row_1_3",
+        image: "row_1_11",
         label: "Travel to Korea",
         description: "The hottest tracks in India. Cover: Taylor...",
         link: "/CultureExchanges/3"
       },
       {
-        image: "row_1_4",
-        label: "Development Fellowship",
-        description: "Since 2007, the Leadership...",
-        link: "/CultureExchanges/7"
-      },
-      {
-        image: "row_1_10",
-        label: "Kectil Cultural Exchange Program",
-        description: "It is a year-long Asian cultural exch...",
-        link: "/CultureExchanges/4"
-      },
-      {
-        image: "row_1_11",
-        label: "Youth Policy Summit",
-        description: "The Youth Policy Summit 2024 in Malaysia...",
-        link: "/CultureExchanges/5"
-      },
-      {
         image: "row_1_12",
-        label: "Hansen Leadership Institute",
-        description: "Hansen Leadership Institute 2024 in the...",
-        link: "/CultureExchanges/6"
+        label: "Travel to Japan",
+        description: "Get to know about Japanese Culture...",
+        link: "/CultureExchanges/1"
       },
       {
         image: "row_1_5",
