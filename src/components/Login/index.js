@@ -58,7 +58,7 @@ const LoginForm = () => {
         <div className="line"></div>
       </div>
       <div className="signup">
-        Don't have an account? <a href="/register">Register Now</a>
+        Don't have an account? <button onClick={() => window.location.href = '/register'}>Register Now</button>
       </div>
     </div>
   );
