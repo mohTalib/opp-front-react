@@ -15,10 +15,6 @@ function Sidebar() {
     >
       <SpotifyLogo />
       <SidebarRow />
-      <div className="playlist__row" data-tooltip="Not Available">
-        <AccessTimeIcon className="playlist__row__icon--favorite" />
-        <span className="playlist__row__label" style={{ fontSize: 14 }}>Deadline Reminder</span>
-      </div>
     </div>
   );
 }
