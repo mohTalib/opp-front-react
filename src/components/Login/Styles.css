@@ -54,7 +54,8 @@
 }
 
 .forgot a:hover, .signup a:hover {
-  text-decoration: underline#fdd361;
+  text-decoration: underline; 
+  color: #fdd361; 
 }
 
 .sign {
