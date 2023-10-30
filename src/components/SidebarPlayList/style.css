@@ -43,14 +43,24 @@
 }
 
 .playlist__row_insta{
-    margin-top: 14em;
+    margin-top: 11em;
     font-size: 35px !important;
     margin-left: 35px;
 }
 .playlist__row_insta .MuiSvgIcon-root {
     margin-right: 25px; 
   }
-
+.email-problem{
+    font-size: 10px;
+    font-family: "Spotify Bold";
+    color: #999;
+  }
+  .email-margin{
+    margin-top: 2.5em;
+  }
+  .email-margin span{
+    color: gold;
+  }
 .link-without-style {
     text-decoration: none;
     color: inherit;
