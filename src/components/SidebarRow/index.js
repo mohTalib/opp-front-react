@@ -15,7 +15,7 @@ function SidebarRow() {
         <div className="sidebar__row__label">Search</div>
       </div>
       </div>
-      <a href="http://127.0.0.1:8000/" className="non-link">
+      <a href="https://opportunity-club.com/dashboard" className="non-link">
       <div className="sidebar__row">
       
         <div className="sidebar__row__icon">
