@@ -1,7 +1,7 @@
 import React from "react";
 import DataRow from "../DataRow";
 import { data } from "../../spotify";
-;
+
 import "./style.css";
 
 
