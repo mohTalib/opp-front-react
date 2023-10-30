@@ -35,7 +35,7 @@ const Voloid = () => {
         var endDate = new Date(opp.time5).getTime();
         var timeRemaining = endDate - currentTime;
 
-    if (opp?.time6 == 1) {
+    if (opp?.time5 == 1) {
         document.getElementById("countdown").innerHTML = "Always Open";
         return; 
     }
