@@ -12,7 +12,7 @@ function PlayLists() {
       <hr style={{ width: 180, backgroundColor: "grey" }} />
       <div className="playlist__row" data-tooltip="Not Available">
         <AddCircleIcon className="playlist__row__icon" />
-        <span className="playlist__row__label">Create Library</span>
+        <span className="playlist__row__label">Create Your List</span>
       </div>
       <div className="playlist__row" data-tooltip="Not Available">
         <AccessTimeIcon className="playlist__row__icon--favorite" />
