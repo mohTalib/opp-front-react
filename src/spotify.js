@@ -11,14 +11,14 @@ const data = [
       },
       {
         image: "row_7_2",
-        label: "SUSI",
+        label: "SUSI YOUNG WOMEN LEADERS",
         description: "The Study of the United States...",
         link: "/CultureExchanges/10"
       },
       {
         image: "row_7_10",
-        label: "SUSI",
-        description: "It is a year-long Asian cultural exch...",
+        label: "SUSI RELIGIOUS DIVERSITY",
+        description: "The Study of the United States...",
         link: "/CultureExchanges/5"
       },
       {
