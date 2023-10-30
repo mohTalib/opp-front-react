@@ -52,7 +52,7 @@ export const images = {
   row_7_3: "https://dj-front.onrender.com/media/imagesopps/US_Embassy_Logo_RI4Y7FJ.jpg",
   row_7_4: "https://dj-front.onrender.com/media/imagesopps/US_Embassy_Logo_RI4Y7FJ.jpg",
   row_7_5: "https://dj-front.onrender.com/media/imagesopps/US_Embassy_Logo_RI4Y7FJ.jpg",
-  row_7_6: require("./assets/images/Focus/6.jpg").default,
+  row_7_10: "https://dj-front.onrender.com/media/imagesopps/US_Embassy_Logo_RI4Y7FJ.jpg",
   row_7_7: require("./assets/images/Focus/7.jpg").default,
   row_7_8: require("./assets/images/Focus/8.jpg").default,
 };
