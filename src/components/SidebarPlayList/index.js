@@ -28,6 +28,9 @@ function PlayLists() {
           <LinkedInIcon className="icon-with-hover-effect"/>
         </a>
       </div>
+      <div className="email-margin">
+      <p className="email-problem">If you have any concerns about deadlines or other matters, please feel free to email us at <span>ma21124@auis.edu.krd.</span></p>
+      </div>
     </div>
   );
 }
