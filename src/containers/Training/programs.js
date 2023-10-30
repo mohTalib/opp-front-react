@@ -21,7 +21,7 @@ function OppsCates7({ image, link }) {
 
   return (
     <>
-      <div data-aos="fade" data-aos-easing="ease-in" data-aos-duration="1000">
+      <div data-aos="fade" data-aos-easing="ease-in" data-aos-duration="1000" className='mobile_size'>
         <h4 style={{ fontFamily: "Spotify Bold", fontSize: 30, color: "#fff" }}>Training</h4>
         <p style={{ fontSize: 14, color: "#999", fontFamily: "Spotify Bold" }}>
         </p>
