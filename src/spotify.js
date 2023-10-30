@@ -247,7 +247,7 @@ const data = [
     cards: [
       {
         image: "row_6_3",
-        label: "TEDxNishtiman 2024",
+        label: "TEDxHawler",
         description: "Feeling like everything just plain sucks?We'v...",
         link: "/others/1"
       },
