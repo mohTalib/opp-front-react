@@ -3,6 +3,44 @@ const data = [
     id: 1,
     title: "Culture Exchanges & Programs",
     cards: [
+        {
+    id: 6,
+    title: "US Embassy Programs",
+    cards: [
+      {
+        image: "row_7_1",
+        label: "IYLEP",
+        description: "Iraqi Young Leaders Exchange...",
+        link: "/CultureExchanges/8"
+      },
+      {
+        image: "row_7_2",
+        label: "SUSI",
+        description: "The Study of the United States...",
+        link: "/CultureExchanges/10"
+      },
+      {
+        image: "row_7_10",
+        label: "SUSI",
+        description: "It is a year-long Asian cultural exch...",
+        link: "/CultureExchanges/5"
+      },
+      {
+        image: "row_7_3",
+        label: "SLP",
+        description: "The Student Leaders Program...",
+        link: "/CultureExchanges/9"
+      },
+      {
+        image: "row_7_4",
+        label: "CEE",
+        description: "The Community Engagement Exc...",
+        link: "/CultureExchanges/11"
+      },
+
+
+    ],
+  },
       {
         image: "row_1_1",
         label: "IYLEP",
@@ -54,44 +92,7 @@ const data = [
 
     ],
   },
-  {
-    id: 6,
-    title: "US Embassy Programs",
-    cards: [
-      {
-        image: "row_1_1",
-        label: "IYLEP",
-        description: "Iraqi Young Leaders Exchange...",
-        link: "/CultureExchanges/8"
-      },
-      {
-        image: "row_1_2",
-        label: "SUSI",
-        description: "The Study of the United States...",
-        link: "/CultureExchanges/10"
-      },
-      {
-        image: "row_1_10",
-        label: "SUSI",
-        description: "It is a year-long Asian cultural exch...",
-        link: "/CultureExchanges/5"
-      },
-      {
-        image: "row_1_3",
-        label: "SLP",
-        description: "The Student Leaders Program...",
-        link: "/CultureExchanges/9"
-      },
-      {
-        image: "row_1_4",
-        label: "CEE",
-        description: "The Community Engagement Exc...",
-        link: "/CultureExchanges/11"
-      },
 
-
-    ],
-  },
   {
     id: 2,
     title: "Virtual Experience Programs",
