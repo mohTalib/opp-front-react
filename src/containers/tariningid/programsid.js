@@ -32,7 +32,7 @@ const Trainingid = () => {
         var endDate = new Date(opp.time7).getTime();
         var timeRemaining = endDate - currentTime;
 
-    if (opp?.time6 == 1) {
+    if (opp?.time7 == 1) {
         document.getElementById("countdown").innerHTML = "Always Open";
         return; 
     }
