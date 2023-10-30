@@ -21,6 +21,7 @@ function Footer() {
           <div className="link">
         <div className="playlist__row" data-tooltip="Not Available">
           <AccessTimeIcon className="playlist__row__icon--favorite" />
+            <p>Reminder</p>
           </div>
           </div>
         </div>
