@@ -35,6 +35,11 @@ const Othersid = () => {
         return; 
     }
         
+    if (opp?.time6 == 1) {
+        document.getElementById("countdown").innerHTML = "Always Open";
+        return; 
+    }
+        
     if (timeRemaining <= 0) {
       document.getElementById("countdown").innerHTML = "Not Available";
       return;
