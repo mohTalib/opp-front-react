@@ -16,7 +16,7 @@ export const images = {
   row_2_7: require("./assets/images/hiphop/7.jpg").default,
   row_2_8: require("./assets/images/hiphop/8.jpg").default,
   row_2_9: require("./assets/images/hiphop/8.jpg").default,
-  row_3_1: require("./assets/images/ShowsToTry/1.jpg").default,
+  row_3_1: "https://dj-front.onrender.com/media/imagesopps/UNICEF_and_MINISTRY_zVDltit.jpg",
   row_3_2: "https://dj-front.onrender.com/media/imagesopps/UN.jpg",
   row_3_3: "https://dj-front.onrender.com/media/imagesopps/OIST.jpg",
   row_3_4: require("./assets/images/ShowsToTry/4.jpg").default,
