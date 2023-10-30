@@ -11,8 +11,10 @@ function Footer() {
       <div className="footer d-flex align-items-center">
         <div className="mobile-footer hidden-lg-up">
           <div className="link">
-            <HomeIcon className="footer-icon" style={{ color: "#fff" }} />
-            <p style={{ color: "#fff" }}>Home</p>
+        <a href="https://opportunity-club.com/dashboard">
+          <HomeIcon className="footer-icon" style={{ color: "#fff" }} />
+          <p style={{ color: "#fff" }}>Home</p>
+        </a>
           </div>
           <div className="link" data-tooltip="Not Available">
             <SearchIcon className="footer-icon" />
