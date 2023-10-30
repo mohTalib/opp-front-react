@@ -24,11 +24,11 @@ function OppsCates2({ image, link }) {
 
   return (
     <>
-      <div data-aos="fade" data-aos-easing="ease-in" data-aos-duration="1000">
+      <div data-aos="fade" data-aos-easing="ease-in" data-aos-duration="1000" className='mobile_size'>
         <h4 style={{ fontFamily: "Spotify Bold", fontSize: 30, color: "#fff" }}>Internships</h4>
         <p style={{ fontSize: 14, color: "#999", fontFamily: "Spotify Bold" }}></p>
       </div>
-      <div className='d-flex flex-wrap align-content-center'>
+      <div className='align-content-center padding-cards'>
         {opps.map((opp) => (
           <a href={`/Internships/${opp.id}`} rel="noopener noreferrer" className="theanger">
             <div className="card__container">
