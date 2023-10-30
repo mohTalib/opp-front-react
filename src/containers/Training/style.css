@@ -7,3 +7,20 @@
         font-size: 20px;
     }
 }
+@media only screen and (max-width: 390px) {
+    .card__container1{
+        width: 600px;
+       
+        margin-left: 5em; 
+    }
+
+
+
+}
+
+
+.padding-cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(170px, 9fr));
+    gap: 20px;
+}
