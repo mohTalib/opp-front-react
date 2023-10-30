@@ -1,9 +1,5 @@
 const data = [
-  {
-    id: 1,
-    title: "Culture Exchanges & Programs",
-    cards: [
-        {
+    {
     id: 6,
     title: "US Embassy Programs",
     cards: [
@@ -37,10 +33,12 @@ const data = [
         description: "The Community Engagement Exc...",
         link: "/CultureExchanges/11"
       },
-
-
     ],
   },
+  {
+    id: 1,
+    title: "Culture Exchanges & Programs",
+    cards: [
       {
         image: "row_1_1",
         label: "IYLEP",
