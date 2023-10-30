@@ -36,7 +36,7 @@ const Programsid = () => {
         var endDate = new Date(opp.time4).getTime();
         var timeRemaining = endDate - currentTime;
 
-    if (opp?.time6 == 1) {
+    if (opp?.time4 == 1) {
         document.getElementById("countdown").innerHTML = "Always Open";
         return; 
     }
