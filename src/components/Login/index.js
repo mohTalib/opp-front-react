@@ -57,9 +57,9 @@ const LoginForm = () => {
         <div className="line"></div>
         <div className="line"></div>
       </div>
-      <p className="signup">
+      <div className="signup">
         Don't have an account? <a href="/register">Register Now</a>
-      </p>
+      </div>
     </div>
   );
 };
