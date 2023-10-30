@@ -24,7 +24,7 @@ export const images = {
   row_3_6: require("./assets/images/ShowsToTry/6.jpg").default,
   row_3_7: require("./assets/images/ShowsToTry/7.jpg").default,
   row_3_8: require("./assets/images/ShowsToTry/8.jpg").default,
-  row_4_1: require("./assets/images/LaidbackBeats/1.jpg").default,
+  row_4_1: "https://dj-front.onrender.com/media/imagesopps/ISMIS_logo_62lUkkc.jpg",
   row_4_2: "https://dj-front.onrender.com/media/imagesopps/UN.jpg",
   row_4_3: "https://dj-front.onrender.com/media/imagesopps/OIST.jpg",
   row_4_4: "https://dj-front.onrender.com/media/imagesopps/rawanga.jpg",
