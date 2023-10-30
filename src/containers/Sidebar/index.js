@@ -15,6 +15,7 @@ function Sidebar() {
     >
       <SpotifyLogo />
       <SidebarRow />
+      <PlayList />
     </div>
   );
 }
