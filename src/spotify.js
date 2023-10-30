@@ -41,45 +41,45 @@ const data = [
     cards: [
       {
         image: "row_1_1",
-        label: "IYLEP",
-        description: "Iraqi Young Leaders Exchange...",
-        link: "/CultureExchanges/8"
+        label: "Travel to Japan",
+        description: "Get to know about Japanese Culture...",
+        link: "/CultureExchanges/1"
       },
       {
         image: "row_1_2",
-        label: "SUSI",
-        description: "The Study of the United States...",
-        link: "/CultureExchanges/10"
-      },
-      {
-        image: "row_1_3",
-        label: "SLP",
-        description: "The Student Leaders Program...",
-        link: "/CultureExchanges/9"
-      },
-      {
-        image: "row_1_4",
-        label: "CEE",
-        description: "The Community Engagement Exc...",
-        link: "/CultureExchanges/11"
-      },
-      {
-        image: "row_1_10",
         label: "Istanbul cultural Trip",
         description: "You are warmly invited to partake at Korean...",
         link: "/CultureExchanges/2"
       },
       {
-        image: "row_1_11",
+        image: "row_1_3",
         label: "Travel to Korea",
         description: "The hottest tracks in India. Cover: Taylor...",
         link: "/CultureExchanges/3"
       },
       {
+        image: "row_1_4",
+        label: "Youth Policy Summit",
+        description: "15 Fully Funded Seats: The...",
+        link: "/CultureExchanges/11"
+      },
+      {
+        image: "row_1_10",
+        label: "Development Fellowship",
+        description: "Since 2007, the Leadership...",
+        link: "/CultureExchanges/7"
+      },
+      {
+        image: "row_1_11",
+        label: "Kectil Cultural Exchange Program",
+        description: "Kectil Cultural Exchange Progr...",
+        link: "/CultureExchanges/4"
+      },
+      {
         image: "row_1_12",
-        label: "Travel to Japan",
-        description: "Get to know about Japanese Culture...",
-        link: "/CultureExchanges/1"
+        label: "Hansen Leadership Institute",
+        description: "Hansen Leadership Institute 2024 in...",
+        link: "/CultureExchanges/6"
       },
       {
         image: "row_1_5",
