@@ -61,7 +61,7 @@ const data = [
         image: "row_1_4",
         label: "Youth Policy Summit",
         description: "15 Fully Funded Seats: The...",
-        link: "/CultureExchanges/11"
+        link: "/CultureExchanges/5"
       },
       {
         image: "row_1_10",
