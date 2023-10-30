@@ -92,7 +92,7 @@ const data = [
         image: "row_3_1",
         label: "National Youth Group",
         description: "Ministry of Youth and Sports...",
-        link: "/Governmental/2"
+        link: "/Governmental/1"
       },
       {
         image: "row_1_5",
