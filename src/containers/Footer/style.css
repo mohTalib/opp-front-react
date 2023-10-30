@@ -56,6 +56,20 @@
     position: absolute;
 }
 
+.playlist__row {
+    position: relative; 
+    margin-bottom: 5px;
+}
+
+.playlist__row__icon {
+    margin-right: 16px;
+    background-color: #ccc;
+    padding: 5px;
+    font-size: 35px !important;
+    color: #000;
+    border-radius: 50%;
+}
+
 @media only screen and (max-width: 768px) {
     .song-info,
     .controls,
@@ -80,6 +94,12 @@
     .link>p {
         font-family: "Spotify Bold";
         color: #999;
+    }
+    .playlist__row>p {
+        font-family: "Spotify Bold";
+        color: #999;
+        margin-top: 3px;
+        margin-right: 6px;
     }
     .footer {
         padding: 10px;
