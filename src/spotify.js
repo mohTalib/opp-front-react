@@ -110,7 +110,7 @@ const data = [
         image: "row_4_1",
         label: "I.S.M.S. Co. Ltd",
         description: "Chill instrumental beats. Artwork: Gize...",
-        link: "/internships/2"
+        link: "/internships/13"
       },
       {
         image: "row_4_2",
