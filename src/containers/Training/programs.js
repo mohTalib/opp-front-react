@@ -26,7 +26,7 @@ function OppsCates7({ image, link }) {
         <p style={{ fontSize: 14, color: "#999", fontFamily: "Spotify Bold" }}>
         </p>
       </div>
-      <div className='d-flex flex-wrap align-content-center'>
+      <div className='align-content-center padding-cards'>
         {opps.map((opp) => (
           <a href={`/Training/${opp.id}`} target="_blank" rel="noopener noreferrer" className="theanger" key={opp.id}>
             <div className="card__container">
