@@ -19,7 +19,7 @@ const data = [
         image: "row_7_10",
         label: "SUSI RELIGIOUS DIVERSITY",
         description: "The Study of the United States...",
-        link: "/CultureExchanges/5"
+        link: "/CultureExchanges/12"
       },
       {
         image: "row_7_3",
