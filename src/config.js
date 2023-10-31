@@ -6,7 +6,7 @@ export const images = {
   row_1_5: "https://dj-front.onrender.com/media/imagesopps/showall.jpg",
   row_1_10: "https://dj-front.onrender.com/media/imagesopps/US_Embassy_Logo.jpg",
   row_1_11: "https://dj-front.onrender.com/media/imagesopps/Kectile.jpg",
-  row_1_12: "https://dj-front.onrender.com/media/imagesopps/9_tMJUxF8.jpg",
+  row_1_12: "https://dj-front.onrender.com/media/imagesopps/9.jpg",
   row_2_1: "https://dj-front.onrender.com/media/imagesopps/red_2.jpg",
   row_2_2: "https://dj-front.onrender.com/media/imagesopps/master.jpg",
   row_2_3: "https://dj-front.onrender.com/media/imagesopps/wal.jpg",
