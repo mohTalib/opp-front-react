@@ -26,7 +26,7 @@ const RegistrationForm = () => {
     }
 
     try {
-      await axios.post('/register/', { full_name: fullName, email });
+      await axios.post('https://dj-front.onrender.com/register/', { full_name: fullName, email });
       console.log('Registration successful');
       navigate('/dashboard'); // Redirect to the dashboard after successful registration
     } catch (error) {
