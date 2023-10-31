@@ -105,13 +105,13 @@ const data = [
         image: "row_2_2",
         label: "Cybersecurity",
         description: "Explore a day in the life of a Security...",
-        link: "/VirtualPrograms/2"
+        link: "/VirtualPrograms/3"
       },
       {
         image: "row_2_3",
         label: "Advanced Software Engineering",
         description: "Take the opportunity to get a true...",
-        link: "/VirtualPrograms/3"
+        link: "/VirtualPrograms/2"
       },
       {
         image: "row_1_5",
