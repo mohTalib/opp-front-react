@@ -3,7 +3,7 @@ export const images = {
   row_1_2: "https://dj-front.onrender.com/media/imagesopps/Turkey_Program.jpg",
   row_1_3: "https://dj-front.onrender.com/media/imagesopps/Korea_Program.jpg",
   row_1_4: "https://dj-front.onrender.com/media/imagesopps/photo_2023-10-06_17-27-44.jpg",
-  row_1_5: "https://dj-front.onrender.com/media/imagesopps/5_mUfTjlk.jpg",
+  row_1_5: "https://dj-front.onrender.com/media/imagesopps/showall.jpg",
   row_1_10: "https://dj-front.onrender.com/media/imagesopps/US_Embassy_Logo.jpg",
   row_1_11: "https://dj-front.onrender.com/media/imagesopps/Kectile.jpg",
   row_1_12: "https://dj-front.onrender.com/media/imagesopps/9_tMJUxF8.jpg",
