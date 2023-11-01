@@ -26,7 +26,7 @@ const RegistrationForm = () => {
   const validEmailDomains = ['@auis.edu.krd', '@alumni.auis.edu.krd'];
   const emailDomain = lowerCaseEmail.substring(lowerCaseEmail.lastIndexOf('@'));
   if (!validEmailDomains.includes(emailDomain)) {
-    setError('Invalid email domain. Please use a valid email domain.');
+    setError('Invalid email domain. Please use AUIS email.');
     return; 
   }
 
