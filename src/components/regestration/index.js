@@ -22,16 +22,18 @@ const RegistrationForm = () => {
   
   const lowerCaseEmail = email.toLowerCase();
 
-  // Check if the email has the required domain
-  if (!lowerCaseEmail.endsWith('@auis.edu.krd') || !lowerCaseEmail.endsWith('@alumni.auis.edu.krd')) {
-    setError('Invalid email domain. Please use AUIS email');
-    return; // Prevent registration if the email domain is invalid
+  
+  const validEmailDomains = ['@auis.edu.krd', '@alumni.auis.edu.krd'];
+  const emailDomain = lowerCaseEmail.substring(lowerCaseEmail.lastIndexOf('@'));
+  if (!validEmailDomains.includes(emailDomain)) {
+    setError('Invalid email domain. Please use a valid email domain.');
+    return; 
   }
 
     try {
       await axios.post('https://dj-front.onrender.com/register/', { full_name: fullName, email: lowerCaseEmail });
       console.log('Registration successful');
-      navigate('/dashboard'); // Redirect to the dashboard after successful registration
+      navigate('/dashboard'); 
     } catch (error) {
       console.error('Registration failed', error);
     }
