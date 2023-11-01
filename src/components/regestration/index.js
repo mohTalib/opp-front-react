@@ -23,8 +23,8 @@ const RegistrationForm = () => {
   const lowerCaseEmail = email.toLowerCase();
 
   // Check if the email has the required domain
-  if (!lowerCaseEmail.endsWith('@auis.edu.krd') && !lowerCaseEmail.endsWith('@alumni.auis.edu.krd')) {
-    setError('Invalid email domain. Please use an @auis.edu.krd or @alumni.auis.edu.krd email.');
+  if (!lowerCaseEmail.endsWith('@auis.edu.krd') || !lowerCaseEmail.endsWith('@alumni.auis.edu.krd')) {
+    setError('Invalid email domain. Please use AUIS email');
     return; // Prevent registration if the email domain is invalid
   }
 
