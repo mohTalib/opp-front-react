@@ -19,25 +19,30 @@ const RegistrationForm = () => {
       return; // Prevent registration if any field is empty
     }
 
-  
-  const lowerCaseEmail = email.toLowerCase();
+ const validateEmail = (email) => {
+  const regex = /^[a-zA-Z]{2}(1[6-9]|2[0-3])\d{3}(@auis\.edu\.krd|@alumni\.auis\.edu\.krd)$/;
 
-  
-  const validEmailDomains = ['@auis.edu.krd', '@alumni.auis.edu.krd'];
-  const emailDomain = lowerCaseEmail.substring(lowerCaseEmail.lastIndexOf('@'));
-  if (!validEmailDomains.includes(emailDomain)) {
-    setError('Invalid email domain. Please use AUIS email.');
-    return; 
+  if (!regex.test(email)) {
+    setError('Invalid email format. Please use the specified format.');
+    return false;
   }
+  return true;
+};
 
-    try {
-      await axios.post('https://dj-front.onrender.com/register/', { full_name: fullName, email: lowerCaseEmail });
-      console.log('Registration successful');
-      navigate('/dashboard'); 
-    } catch (error) {
-      console.error('Registration failed', error);
-    }
-  };
+const lowerCaseEmail = email.toLowerCase();
+
+if (!validateEmail(lowerCaseEmail)) {
+  return;
+}
+
+try {
+  await axios.post('https://dj-front.onrender.com/register/', { full_name: fullName, email: lowerCaseEmail });
+  console.log('Registration successful');
+  navigate('/dashboard');
+} catch (error) {
+  console.error('Registration failed', error);
+}
+
 
   return (
     <div className="form-container">
