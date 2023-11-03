@@ -42,7 +42,7 @@ export const images = {
   row_5_8: require("./assets/images/Mood/8.jpg").default,
   row_6_2: require("./assets/images/soundtrack/2.jpg").default,
   row_6_3: "https://dj-front.onrender.com/media/imagesopps/Tedx_Logo.jpg",
-  row_6_4: "https://dj-front.onrender.com/media/imagesopps/4_Yo3mkKh.jpg",
+  row_6_4: "https://dj-front.onrender.com/media/imagesopps/4_HQNkNrV.jpg",
   row_6_5: "https://dj-front.onrender.com/media/imagesopps/Asian_Development_Bank.jpg",
   row_6_6: "https://dj-front.onrender.com/media/imagesopps/Open_University.jpg",
   row_6_7: "https://dj-front.onrender.com/media/imagesopps/un-co.jpg",
