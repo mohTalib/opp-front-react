@@ -14,7 +14,7 @@ const RegistrationForm = () => {
     const regex = /^[a-zA-Z]{2}(1[6-9]|2[0-3])\d{3}(@auis\.edu\.krd|@alumni\.auis\.edu\.krd)$/;
 
     if (!regex.test(email)) {
-      setError('Invalid email format. Please use the specified format.');
+      setError('Invalid email. Please Your AUIS email.');
       return false;
     }
     return true;
