@@ -7,6 +7,7 @@ import { Link } from 'react-router-dom';
 const RegistrationForm = () => {
   const [fullName, setFullName] = useState('');
   const [email, setEmail] = useState('');
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [error, setError] = useState(''); // State to hold the error message
   const navigate = useNavigate();
 
@@ -30,6 +31,8 @@ const RegistrationForm = () => {
     try {
       await axios.post('https://dj-front.onrender.com/register/', { full_name: fullName, email: lowerCaseEmail });
       console.log('Registration successful');
+      localStorage.setItem('userStatus', 'authenticated');
+      setIsLoggedIn(true);
       navigate('/dashboard');
     } catch (error) {
       console.error('Registration failed', error);
