@@ -85,20 +85,19 @@ const RegistrationForm = () => {
             value={fullName}
             onChange={(e) => setFullName(e.target.value)}
           />
-          <label htmlFor="fullName">Write Down Your Full Name:</label>
+          <label htmlFor="email">Write Down Your Email:</label>
           <input
-            type="text"
-            id="fullName"
-            placeholder="Full Name"
-            value={fullName}
-            onChange={(e) => setFullName(e.target.value)}
+            type="email"
+            id="email"
+            placeholder="Email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
           />
-          {error && <p style={{ color: 'yellow' }}>{error}</p>}
+          {error && <p style={{ color: 'yellow' }}>{error}</p>} {/* Display error message if present */}
         </div>
        <button className="sign" type="submit" disabled={isLoading} title="Submit Registration">
         {isLoading ? 'Registering...' : 'Register'}
         </button>
-
       </form>
       <div className="social-message">
         <div className="line"></div>
