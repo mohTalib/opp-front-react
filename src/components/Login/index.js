@@ -1,54 +1,34 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 import './Styles.css';
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 
 const LoginForm = () => {
   const [email, setEmail] = useState('');
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
-  const [error, setError] = useState('');
-  const [loading, setLoading] = useState(false);
+  const [isLoggedIn, setIsLoggedIn] = useState(false); // Define setIsLoggedIn here
+  const [error, setError] = useState(''); // State to hold the error message
   const navigate = useNavigate();
 
-  useEffect(() => {
-    setError(''); // Reset error message when email changes
-  }, [email]);
-
-  const debounce = (func, delay) => {
-    let timeoutId;
-    return function (...args) {
-      clearTimeout(timeoutId);
-      timeoutId = setTimeout(() => func.apply(this, args), delay);
-    };
-  };
-
-  const debouncedSubmit = debounce(async () => {
-    setLoading(true);
+  const handleSubmit = async (e) => {
+    e.preventDefault();
 
     // Check if the email is empty
     if (!email.trim()) {
-      setError('Please enter your email.');
-      setLoading(false);
-      return;
+      setError('Please enter your email.'); // Display an error if the email is empty
+      return; // Prevent login if the email is empty
     }
 
     try {
       await axios.post('https://dj-front.onrender.com/login/', { email });
       console.log('Login successful');
       localStorage.setItem('userStatus', 'authenticated');
-      setIsLoggedIn(true);
+      setIsLoggedIn(true); // Set the user as logged in
       navigate('/dashboard');
     } catch (error) {
       console.error('Login failed', error);
       setError('Please enter a valid email');
-    } finally {
-      setLoading(false);
     }
-  }, 500); // Adjust the debounce delay as needed
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    debouncedSubmit();
   };
 
   return (
@@ -67,12 +47,10 @@ const LoginForm = () => {
               value={email}
               onChange={(e) => setEmail(e.target.value)}
             />
-            {error && <p style={{ color: 'yellow' }}>{error}</p>}
+             {error && <p style={{ color: 'yellow' }}>{error}</p>} {/* Display error message if present */}
           </div>
-
-          <button className="sign" type="submit" disabled={loading}>
-            {loading ? 'Joining...' : 'Join'}
-          </button>
+         
+          <button className="sign" type="submit">Join</button>
         </form>
       )}
       <div className="social-message">
@@ -80,10 +58,7 @@ const LoginForm = () => {
         <div className="line"></div>
       </div>
       <div className="signup">
-        Don't have an account?{' '}
-        <button className="sign" onClick={() => navigate('/register')}>
-          Register Now
-        </button>
+        Don't have an account? <button className="sign" onClick={() => window.location.href = '/register'}>Register Now</button>
       </div>
     </div>
   );
