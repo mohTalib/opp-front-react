@@ -1,33 +1,40 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
+import { debounce } from 'lodash';
 import './Styles.css';
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 
 const LoginForm = () => {
   const [email, setEmail] = useState('');
-  const [isLoggedIn, setIsLoggedIn] = useState(false); // Define setIsLoggedIn here
-  const [error, setError] = useState(''); // State to hold the error message
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [error, setError] = useState('');
+  const [isLoading, setIsLoading] = useState(false);
   const navigate = useNavigate();
+
+  const handleInputChange = debounce((value) => {
+    setEmail(value);
+  }, 300);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    // Check if the email is empty
     if (!email.trim()) {
-      setError('Please enter your email.'); // Display an error if the email is empty
-      return; // Prevent login if the email is empty
+      setError('Please enter your email.');
+      return;
     }
 
     try {
+      setIsLoading(true);
       await axios.post('https://dj-front.onrender.com/login/', { email });
       console.log('Login successful');
       localStorage.setItem('userStatus', 'authenticated');
-      setIsLoggedIn(true); // Set the user as logged in
+      setIsLoggedIn(true);
       navigate('/dashboard');
     } catch (error) {
       console.error('Login failed', error);
       setError('Please enter a valid email');
+    } finally {
+      setIsLoading(false);
     }
   };
 
@@ -45,12 +52,13 @@ const LoginForm = () => {
               name="email"
               id="email"
               value={email}
-              onChange={(e) => setEmail(e.target.value)}
+              onChange={(e) => handleInputChange(e.target.value)}
             />
-             {error && <p style={{ color: 'yellow' }}>{error}</p>} {/* Display error message if present */}
+            {error && <p className="error-message">{error}</p>}
           </div>
-         
-          <button className="sign" type="submit">Join</button>
+          <button className="sign" type="submit" disabled={isLoading}>
+            {isLoading ? 'Joining...' : 'Join'}
+          </button>
         </form>
       )}
       <div className="social-message">
@@ -58,7 +66,10 @@ const LoginForm = () => {
         <div className="line"></div>
       </div>
       <div className="signup">
-        Don't have an account? <button className="sign" onClick={() => window.location.href = '/register'}>Register Now</button>
+        Don't have an account?{' '}
+        <button className="sign" onClick={() => navigate('/register')}>
+          Register Now
+        </button>
       </div>
     </div>
   );
