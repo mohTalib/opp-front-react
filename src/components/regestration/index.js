@@ -16,7 +16,7 @@ const RegistrationForm = () => {
 
   const handleInputChange = debounce((value, setter) => {
     setter(value);
-  }, 300);
+  }, 50);
 
   const validateEmail = async (email) => {
     const regex = /^[a-zA-Z]{2}(1[6-9]|2[0-3])\d{3}(@auis\.edu\.krd|@alumni\.auis\.edu\.krd)$/;
