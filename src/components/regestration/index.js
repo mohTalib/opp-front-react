@@ -1,48 +1,66 @@
-import React, { useState } from 'react';
+// RegistrationForm.js
+
+import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 import './Styles.css';
 import { Link } from 'react-router-dom';
+import debounce from 'lodash.debounce';
 
 const RegistrationForm = () => {
   const [fullName, setFullName] = useState('');
   const [email, setEmail] = useState('');
+  const [isLoading, setIsLoading] = useState(false);
   const [isLoggedIn, setIsLoggedIn] = useState(false);
-  const [error, setError] = useState(''); // State to hold the error message
+  const [error, setError] = useState('');
   const navigate = useNavigate();
 
   const validateEmail = (email) => {
     const regex = /^[a-zA-Z]{2}(1[6-9]|2[0-3])\d{3}(@auis\.edu\.krd|@alumni\.auis\.edu\.krd)$/;
 
     if (!regex.test(email)) {
-      setError('Invalid email. Please Your AUIS email.');
+      setError('Invalid email. Please use your AUIS email.');
       return false;
     }
     return true;
   };
 
   const handleRegistration = async () => {
-    const lowerCaseEmail = email.toLowerCase();
-
-    if (!validateEmail(lowerCaseEmail)) {
-      return;
-    }
+    setIsLoading(true);
 
     try {
-      await axios.post('https://dj-front.onrender.com/register/', { full_name: fullName, email: lowerCaseEmail });
+      await axios.post('https://dj-front.onrender.com/register/', {
+        full_name: fullName,
+        email: email.toLowerCase(),
+      });
+
       console.log('Registration successful');
       localStorage.setItem('userStatus', 'authenticated');
       setIsLoggedIn(true);
       navigate('/dashboard');
     } catch (error) {
       console.error('Registration failed', error);
+      setError('Registration failed. Please try again.');
+    } finally {
+      setIsLoading(false);
     }
   };
+
+  const debouncedEmailValidation = debounce(async (email) => {
+    if (email.trim() && !validateEmail(email)) {
+      // Handle invalid email
+    }
+  }, 300);
+
+  useEffect(() => {
+    debouncedEmailValidation(email);
+    return () => debouncedEmailValidation.cancel(); // Cleanup debounce on component unmount
+  }, [email, debouncedEmailValidation]);
 
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    if (!fullName.trim() || !email.trim()) {
+    if (!fullName.trim() || !email.trim() || isLoading) {
       setError('Please fill in all fields.');
       return;
     }
@@ -71,10 +89,10 @@ const RegistrationForm = () => {
             value={email}
             onChange={(e) => setEmail(e.target.value)}
           />
-          {error && <p style={{ color: 'yellow' }}>{error}</p>} {/* Display error message if present */}
+          {error && <p style={{ color: 'yellow' }}>{error}</p>}
         </div>
-        <button className="sign" type="submit">
-          Register
+        <button className="sign" type="submit" disabled={isLoading}>
+          {isLoading ? 'Registering...' : 'Register'}
         </button>
       </form>
       <div className="social-message">
