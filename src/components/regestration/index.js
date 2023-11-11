@@ -93,10 +93,10 @@ const RegistrationForm = () => {
             value={email}
             onChange={(e) => setEmail(e.target.value)}
           />
-          {error && <p style={{ color: 'yellow' }}>{error}</p>} {/* Display error message if present */}
+          {error && <p style={{ color: 'yellow' }}>{error}</p>}
         </div>
-       <button className="sign" type="submit" disabled={isLoading} title="Submit Registration">
-        {isLoading ? 'Registering...' : 'Register'}
+        <button className="sign" type="submit" disabled={isLoading}>
+          {isLoading ? 'Registering...' : 'Register'}
         </button>
       </form>
       <div className="social-message">
