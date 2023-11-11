@@ -1,10 +1,6 @@
-// RegistrationForm.js
-
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import { useNavigate } from 'react-router-dom';
-import './Styles.css';
-import { Link } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 import debounce from 'lodash.debounce';
 
 const RegistrationForm = () => {
@@ -25,10 +21,29 @@ const RegistrationForm = () => {
     return true;
   };
 
+  const debouncedEmailValidation = debounce(async (email) => {
+    if (email.trim() && !validateEmail(email)) {
+      setError('Invalid email. Please use your AUIS email.');
+    } else {
+      setError(''); // Clear the error if the email is valid
+    }
+  }, 300);
+
+  useEffect(() => {
+    debouncedEmailValidation(email);
+    return () => debouncedEmailValidation.cancel();
+  }, [email, debouncedEmailValidation]);
+
   const handleRegistration = async () => {
     setIsLoading(true);
 
     try {
+      // Check for email validation error before attempting registration
+      if (error) {
+        console.log('Email validation error:', error);
+        return;
+      }
+
       await axios.post('https://dj-front.onrender.com/register/', {
         full_name: fullName,
         email: email.toLowerCase(),
@@ -45,17 +60,6 @@ const RegistrationForm = () => {
       setIsLoading(false);
     }
   };
-
-  const debouncedEmailValidation = debounce(async (email) => {
-    if (email.trim() && !validateEmail(email)) {
-      // Handle invalid email
-    }
-  }, 300);
-
-  useEffect(() => {
-    debouncedEmailValidation(email);
-    return () => debouncedEmailValidation.cancel(); // Cleanup debounce on component unmount
-  }, [email, debouncedEmailValidation]);
 
   const handleSubmit = (e) => {
     e.preventDefault();
