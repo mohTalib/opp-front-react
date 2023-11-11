@@ -104,7 +104,7 @@ const RegistrationForm = () => {
         <div className="line"></div>
         <div className="line"></div>
       </div>
-      <p className="signup" style={{ cursor: 'pointer' }}>
+      <p className="signup">
         You have an account? <Link to="/">Join Us</Link>
       </p>
     </div>
