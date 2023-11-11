@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
-import { debounce } from 'lodash'; // Import lodash debounce
+import { debounce } from 'lodash';
 import './Styles.css';
 import { Link } from 'react-router-dom';
 
@@ -10,7 +10,8 @@ const RegistrationForm = () => {
   const [email, setEmail] = useState('');
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [error, setError] = useState('');
-  const [isLoading, setIsLoading] = useState(false); // Add loading state
+  const [isLoading, setIsLoading] = useState(false);
+  const [buttonContent, setButtonContent] = useState('Register'); // Initialize button content
   const navigate = useNavigate();
 
   const handleInputChange = debounce((value, setter) => {
@@ -39,11 +40,13 @@ const RegistrationForm = () => {
 
   const handleRegistration = async () => {
     setIsLoading(true);
+    setButtonContent('Registering...'); // Set button content when loading
 
     const lowerCaseEmail = email.toLowerCase();
 
     if (!(await validateEmail(lowerCaseEmail))) {
       setIsLoading(false);
+      setButtonContent('Register'); // Reset button content after loading
       return;
     }
 
@@ -57,6 +60,7 @@ const RegistrationForm = () => {
       console.error('Registration failed', error);
     } finally {
       setIsLoading(false);
+      setButtonContent('Register'); // Reset button content after loading
     }
   };
 
@@ -95,7 +99,7 @@ const RegistrationForm = () => {
           {error && <p style={{ color: 'yellow' }}>{error}</p>}
         </div>
         <button className="sign" type="submit" disabled={isLoading}>
-          {isLoading ? 'Registering...' : 'Register'}
+          {buttonContent}
         </button>
       </form>
       <div className="social-message">
