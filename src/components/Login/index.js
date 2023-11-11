@@ -13,7 +13,7 @@ const LoginForm = () => {
 
   const handleInputChange = debounce((value) => {
     setEmail(value);
-  }, 300);
+  }, 50);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
